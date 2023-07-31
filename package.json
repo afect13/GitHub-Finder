@@ -1,5 +1,6 @@
 {
   "name": "user-search",
+  "homepage": "https://afect13.github.io/user-search",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,6 +24,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "jest",
     "eject": "react-scripts eject"
   },
@@ -49,6 +52,7 @@
     "@babel/preset-react": "^7.22.5",
     "@babel/register": "^7.22.5",
     "babel-jest": "^29.6.2",
+    "gh-pages": "^5.0.0",
     "jest": "^27.5.1",
     "jsdom": "^22.1.0",
     "react-test-renderer": "^18.2.0",

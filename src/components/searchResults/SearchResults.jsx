@@ -6,6 +6,7 @@ import ListItemAvatar from "@mui/material/ListItemAvatar";
 import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
+import { rootPath } from "../../config/config";
 
 const SearchResults = ({ users }) => {
   console.log(users);
@@ -14,7 +15,7 @@ const SearchResults = ({ users }) => {
       <List className="w-full">
         {users &&
           users.map((u) => (
-            <Link className="cursor-pointer" key={u.id} to={`/user/${u.id}`}>
+            <Link className="cursor-pointer" key={u.id} to={`${rootPath}/user/${u.id}`}>
               <ListItem alignItems="flex-start">
                 <ListItemAvatar>
                   <Avatar alt={u.login} src={u.avatar_url} />
