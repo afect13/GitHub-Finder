@@ -6,7 +6,7 @@ export const fetchUsersData = async (login) => {
     const data = await response.json();
     return data;
   } catch (error) {
-    console.log("ErrorFromUsersData:", error);
+    console.warn("ErrorFromUsersData:", error);
   }
 };
 
@@ -27,6 +27,6 @@ export const fetchReposData = async (usersData) => {
         throw new Error();
       });
   } catch (error) {
-    console.log("ErrorFromReposData:", error);
+    console.warn("ErrorFromReposData:", error);
   }
 };

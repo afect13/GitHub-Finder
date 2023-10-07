@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
 import { rootPath } from "../../config/config";
 
 const SearchResults = ({ users }) => {
-  console.log(users);
   return (
     <div className=" w-[500px]">
       <List className="w-full">
